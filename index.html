@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АЛЬТСМАРТ</title>
+</head>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Оставить заявку</h2>
+        <form id="modalRequestForm">
+            <input required type="text" name="name" placeholder="Ваше имя" required><br>
+            <input required type="tel" name="phone" placeholder="Телефон" required><br>
+            <textarea required name="message" placeholder="Опишите вашу проблему" required></textarea><br>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+<body>
+    <header>
+        <div class="header">
+            <img src="" alt="АЛЬТСМАРТ"> 
+        </div>
+        <div class="buttons-wrapper">
+            <div class="buttons">
+                <nav>
+                    <a href="#main" class="active">Главная</a>
+                    <a href="#whyUs" id="about">О нас</a>
+                    <a href="#contactsBox" id="contacts">Контакты</a>
+                    <a href="#services" id="service">Услуги</a>
+                    <a href="#feedback" id="feedbacks">Отзывы</a>
+                </nav>
+            </div>
+        </div>        
+    </header>
+    <main>
+        <div id="main">
+            <div class="canHelp">
+                <div>
+                    <h1>Поможем вашей технике</h1>
+                    <p>Надёжный ремонт, честные цены и индивидуальный подход к каждому клиенту</p>
+                    <p>Можно оставить заявку прямо сейчас!</p>
+                    <a href="#zayva" class="canHelpBut">Оставить заявку</a>
+                </div>
+            </div>
+            <img class="mainBackground" src="./pics/mainBackground.jpg" alt="Фон">
+        </div>  
+    </main>
+    <div id="whyUs" class="whyUs">
+        <img src="./pics/uneditedPic.png" alt="Иконка">
+        <div class="whyUsText">
+            <h2>Почему именно нас?</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ipsam, quo nulla necessitatibus iste veniam voluptas velit dolorum 
+                rerum eaque perferendis sequi. Dolorum nostrum vel debitis nobis.
+            </p>
+        </div>
+    </div>
+    <div id="contactsBox" class="contactsBox">
+        <div class="contactsInfo">
+            <h2>Контакты</h2>
+            <ol>
+                <li>Телефон: </li>
+                <li>Email: </li>
+                <li>Адрес: </li>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis enim at error necessitatibus alias placeat obcaecati aperiam, nisi ullam maxime? Incidunt necessitatibus optio, modi molestias accusamus et autem ipsam voluptate!</li>
+            </ol>
+            <div class="new-container"></div>
+        </div>
+        <div class="orig-container">
+        <!--<a id="iframeChange" class="dg-widget-link" href="http://2gis.ru/izhevsk/firm/5770765303639714/center/53.22388887405396,56.860293655710116/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Ижевска</a><div class="dg-widget-link"><a href="http://2gis.ru/izhevsk/center/53.223885,56.860158/zoom/16/routeTab/rsType/bus/to/53.223885,56.860158╎Альтсмарт, торгово-сервисный центр?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Альтсмарт, торгово-сервисный центр</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":500,"height":400,"borderColor":"#a3a3a3","pos":{"lat":56.860293655710116,"lon":53.22388887405396,"zoom":16},"opt":{"city":"izhevsk"},"org":[{"id":"5770765303639714"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>-->
+         <iframe id="iframeChange" src="https://yandex.ru/map-widget/v1/-/CHEGNL-a"></iframe>
+        </div>
+    </div>
+    <div id="services" class="services">
+        <h2>Услуги</h2>
+        <div class="servicesList">
+            <ul>
+                <li><img src="./pics/SampleService.png" alt="">Диагностика техники</li>
+                <li><img src="./pics/SampleService.png" alt="">Замена экрана</li>
+                <li><img src="./pics/SampleService.png" alt="">Настройка ПО</li>
+            </ul>
+            <ul>
+                <li><img src="./pics/SampleService.png" alt="">Диагностика техники</li>
+                <li><img src="./pics/SampleService.png" alt="">Замена экрана</li>
+                <li><img src="./pics/SampleService.png" alt="">Настройка ПО</li>
+            </ul> 
+        </div>
+    </div>
+    <div id="feedback" class="feedback">
+    <h2>Отзывы клиентов</h2><br>
+    <div class="carousel">
+        <button class="carousel-btn prev">‹</button>
+        <div class="carousel-window">
+            <div class="carousel-inner">
+                <div class="review"><p>2 месяца назад относил свой ПК в ремонт, сомневался, конечно, но результат, в конечном итоге удивил, кроме этого надо отметить что в Альтсмарт очень хорошие цены, по сравнению с другими сервисами. Рекомендую.
+</p><span>– Никита Неханов</span></div>
+                <div class="review"><p>Отличная компания. Быстрый и качественный ремонт. Рекомендую!</p><span>– Петр</span></div>
+                <div class="review"><p>Всё прекрасно! Пк как новый, оправдал ожидания! Персонал доброжелательный и отзывчивый. Однозначно 5 звёзд!</p><span>– Кириллл Шевронов</span></div>
+                <div class="review"><p>Отличный сервис! Быстро и качественно отремонтировали мой компьютер. Вежливый персонал, доступные цены. Рекомендую всем, кто нуждается в помощи!</p><span>– Станислав</span></div>
+                <div class="review"><p>Отличный сервис! Быстро нашли нужную деталь к моему довольно старому телефону, за час починили. Доброжелательный и вежливый персона. Удобное расположение сервиса. И квалификация всех сотрудников, общавшихся со мной, выше всех похвал. Рекомендую!</p><span>– 쓰레기 나는-잊었다</span></div>
+            </div>
+        </div>
+        <button class="carousel-btn next">›</button>
+    </div>
+</div>
+    <div id="zayva" class="zayva">
+        <h2>Оставить заявку</h2>
+        <form id="requestForm">
+            <input type="text" name="name" placeholder="Ваше имя" required><br>
+            <input type="tel" name="phone" placeholder="Телефон" required><br>
+            <textarea name="message" placeholder="Опишите вашу проблему" required></textarea><br>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <footer class="footer">
+    <div class="footer-cta">
+        <div class="footer-text">
+            <p>Хотите написать?<br><strong>Не думайте. Делайте.</strong></p>
+        </div>
+        <a href="#zayva" class="footer-button">Оставить заявку</a>
+    </div>
+    <div class="footer-links">
+        <a href="#main">Главная</a>
+        <a href="#whyUs">О нас</a>
+        <a href="#contactsBox">Контакты</a>
+        <a href="#services">Услуги</a>
+        <a href="#feedback">Отзывы</a>
+    </div>
+    <p class="footer-copy">© 2025 Альтсмарт. Все права защищены.</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
