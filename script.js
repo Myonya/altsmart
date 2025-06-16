@@ -42,20 +42,25 @@ document.getElementById('requestForm').addEventListener('submit', function (e) {
     const text = `<b>Новая заявка</b>\nИмя: ${name.value}\nТелефон: ${phone.value}\nКомментарий: ${message.value}`;
     
     fetch(URI_API, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            chat_id: CHAT_ID,
-            text: text,
-            parse_mode: 'HTML'
-        })
-    }).then(res => {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+        chat_id: CHAT_ID,
+        text: text,
+        parse_mode: 'HTML'
+    })
+}).then(res => res.json())
+  .then(data => {
+    if (data.ok) {
         alert("Заявка отправлена!");
-        this.reset();
-    }).catch(err => {
-        alert("Ошибка отправки");
-        console.error(err);
-    });
+    } else {
+        alert("Ошибка: " + data.description);
+        console.error("Telegram error:", data);
+    }
+    this.reset();
+}).catch(err => {
+    alert("Ошибка отправки");
+    console.error(err);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
