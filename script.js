@@ -32,7 +32,7 @@ window.addEventListener('resize', mobileResize);
 mobileResize();
 
 const TOKEN = '7356344907:AAF5W5Ig2nzTuGbrZcGa5azoHNEkE1fhxyM';
-const CHAT_ID = '855812223';
+const CHAT_ID = '7356344907';
 const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
 document.getElementById('requestForm').addEventListener('submit', function (e) {
