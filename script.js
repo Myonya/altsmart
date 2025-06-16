@@ -88,7 +88,7 @@ document.getElementById("modalRequestForm").addEventListener("submit", function(
 
     const text = `<b>Новая заявка</b>\nИмя: ${name.value}\nТелефон: ${phone.value}\nКомментарий: ${message.value}`;
     
-    fetch(URI_API, {
+        fetch(URI_API, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -103,7 +103,7 @@ document.getElementById("modalRequestForm").addEventListener("submit", function(
         alert("Ошибка отправки");
         console.error(err);
     });
-
+});
     document.getElementById("modal").style.display = "none";
 });
 
