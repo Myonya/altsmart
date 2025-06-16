@@ -104,7 +104,6 @@ document.getElementById("modalRequestForm").addEventListener("submit", function(
         console.error(err);
     });
 
-    this.reset();
     document.getElementById("modal").style.display = "none";
 });
 
