@@ -31,7 +31,7 @@ window.addEventListener('resize', mobileResize);
 // просто вызвать по приколу чтобы мозг не долбить и всё сразу подгрузилось
 mobileResize();
 
-const TOKEN = '7356344907:AAFkV69ACQP281tXrPci5jCG-fOfPBoerb8';
+const TOKEN = '7356344907:AAFSBkCzE4Y5IIDmy3-cbC8to8y9cHrxMWs';
 const CHAT_ID = '855812223';
 const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
