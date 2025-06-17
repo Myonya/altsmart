@@ -12,6 +12,7 @@ navLinks.forEach(link => {
         link.classList.add('active');
     });
 });
+
 // Функция для изменения iframe под мобилки
 function mobileResize() {
     const windowWidth = window.innerWidth; // получение ширины окна
@@ -41,7 +42,7 @@ document.getElementById('requestForm').addEventListener('submit', function (e) {
 
     const text = `<b>Новая заявка</b>\nИмя: ${name.value}\nТелефон: ${phone.value}\nКомментарий: ${message.value}`;
     
-        fetch(URI_API, {
+    fetch(URI_API, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -57,7 +58,6 @@ document.getElementById('requestForm').addEventListener('submit', function (e) {
         console.error(err);
     });
 });
-
 
 document.addEventListener("DOMContentLoaded", () => {
     const inner = document.querySelector(".carousel-inner");
@@ -88,7 +88,7 @@ document.getElementById("modalRequestForm").addEventListener("submit", function(
 
     const text = `<b>Новая заявка</b>\nИмя: ${name.value}\nТелефон: ${phone.value}\nКомментарий: ${message.value}`;
     
-        fetch(URI_API, {
+    fetch(URI_API, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -99,15 +99,12 @@ document.getElementById("modalRequestForm").addEventListener("submit", function(
     }).then(res => {
         alert("Заявка отправлена!");
         this.reset();
+        document.getElementById("modal").style.display = "none";
     }).catch(err => {
         alert("Ошибка отправки");
         console.error(err);
     });
 });
-this.reset()
-    document.getElementById("modal").style.display = "none";
-});
-
 
 document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("modal");
